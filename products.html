@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <!DOCTYPE html>
+<html>
+<head>
+    <title>Vida e Caffè - Products</title>
+</head>
+
+<body>
+
+<h1>Products</h1>
+
+<!-- NAVIGATION -->
+<h3>Navigation</h3>
+<p>
+    <a href="index.html">Home</a> |
+    <a href="about.html">About</a> |
+    <a href="products.html">Products</a> |
+    <a href="enquiry.html">Enquiry</a> |
+    <a href="contact.html">Contact</a>
+</p>
+
+<hr>
+
+<!-- CART DISPLAY -->
+<h2>🛒 Your Order</h2>
+<p id="cart">Cart: 0 items</p>
+
+<hr>
+
+<!-- COFFEE -->
+<h2>Coffee</h2>
+
+<img src="images/Espresso.jpeg" width="150">
+<p>Espresso - R25</p>
+<button onclick="addToCart('Espresso')">Add to Cart</button>
+
+<br><br>
+
+<img src="images/latte.png" width="150">
+<p>Latte - R40</p>
+<button onclick="addToCart('Latte')">Add to Cart</button>
+
+<br><br>
+
+<img src="images/Cappuccino.png" width="150">
+<p>Cappuccino - R35</p>
+<button onclick="addToCart('Cappuccino')">Add to Cart</button>
+
+<hr>
+
+<!-- COLD DRINKS -->
+<h2>Cold Drinks</h2>
+
+<img src="images/lamonade.png" width="150">
+<p>Lemonade - R38</p>
+<button onclick="addToCart('Lemonade')">Add to Cart</button>
+
+<br><br>
+
+<img src="images/smoothies.png" width="150">
+<p>Smoothie - R45</p>
+<button onclick="addToCart('Smoothie')">Add to Cart</button>
+
+<hr>
+
+<!-- FOOD -->
+<h2>Food</h2>
+
+<img src="images/muffin.png" width="150">
+<p>Muffin - R20</p>
+<button onclick="addToCart('Muffin')">Add to Cart</button>
+
+<br><br>
+
+<img src="images/sandwhich.png" width="150">
+<p>Sandwich - R50</p>
+<button onclick="addToCart('Sandwich')">Add to Cart</button>
+
+<hr>
+
+<!-- HOW IT WORKS -->
+<h2>How Ordering Works</h2>
+
+<ol>
+    <li>Click “Add to Cart” on any product</li>
+    <li>Your cart updates automatically</li>
+    <li>Go to Enquiry page to confirm order</li>
+    <li>We will contact you for delivery</li>
+</ol>
+
+<hr>
+
+<script>
+let cartCount = 0;
+let cartItems = [];
+
+function addToCart(item) {
+    cartCount++;
+    cartItems.push(item);
+
+    document.getElementById("cart").innerHTML =
+        "Cart: " + cartCount + " items <br> Items: " + cartItems.join(", ");
+}
+</script>
+
+<!-- FOOTER -->
+<p><small>&copy; 2026 Vida e Caffè | Products Page</small></p>
+
+</body>
+</html> 
