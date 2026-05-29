@@ -3,115 +3,154 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <title>Vida e Caffe - Products</title>
 </head>
 <body>
-     <!DOCTYPE html>
-<html>
-<head>
-    <title>Vida e Caffè - Products</title>
-</head>
+    <!--Header-->
+    <header class="site-header">
+        <h1>Vida e Caffe</h1>
+        <p class="tagline"><i>Experience the finest coffee in town</i></p>
+        <div class="header-divider"></div>
+    </header>
 
-<body>
+    <!--Navigation-->
+    <nav class="main-navigation">
+        <div class="nav-container">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="products.html">Products</a>
+            <a href="enquiry.html">Enquiry</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
 
-<h1>Products</h1>
 
 <!-- NAVIGATION -->
-<h3>Navigation</h3>
-<p>
-    <a href="index.html">Home</a> |
-    <a href="about.html">About</a> |
-    <a href="products.html">Products</a> |
-    <a href="enquiry.html">Enquiry</a> |
-    <a href="contact.html">Contact</a>
-</p>
-
-<hr>
+ <nav class="main-navigation">
+        <div class="nav-container">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="products.html">Products</a>
+            <a href="enquiry.html">Enquiry</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+    <!-- MAIN CONTENT -->
+     <main class="page-wrapper">
 
 <!-- CART DISPLAY -->
-<h2>🛒 Your Order</h2>
-<p id="cart">Cart: 0 items</p>
+ <div class="cart-box">
+    <span class="cart-icon">&#128722;</span>
+    <p id="cart"> Your Order: 0 items</p>
+</div>
 
-<hr>
 
-<!-- COFFEE -->
-<h2>Coffee</h2>
+<!--COFFEE SECTION-->
+<section class="section">
+<h2 class="section-title">&#9749; Coffee</h2>
+<div class="product-grid">
 
-<img src="images/Espresso.jpeg" width="150">
-<p>Espresso - R25</p>
-<button onclick="addToCart('Espresso')">Add to Cart</button>
+<div class="product-card">
+<img src="images/Espresso.jpeg" sizes="(max-width: 600px) 45vw, 130px">
+<h3>Espresso - R25</h3>
+<p class="price">R25.00</p>
+<button class="btn" onclick="addToCart('Espresso')">Add to Cart</button>
 
-<br><br>
+</div>
 
-<img src="images/latte.png" width="150">
-<p>Latte - R40</p>
-<button onclick="addToCart('Latte')">Add to Cart</button>
+<div class="product-card">
+<img src="images/latte.png" sizes="(max-width: 600px) 45vw, 130px">
+<h3>Latte - R40</h3>
+<p class="price">R40.00</p>
+<button class="btn" onclick="addToCart('Latte')">Add to Cart</button>
+</div>
 
-<br><br>
+<div class="product-card">
+<img src="images/Cappuccino.png" sizes="(max-width: 600px) 45vw, 130px">
+<h3>Cappuccino</h3>
+<p class="price">R35.00</p>
+<button class="btn" onclick="addToCart('Cappuccino')">Add to Cart</button>
+</div>
 
-<img src="images/Cappuccino.png" width="150">
-<p>Cappuccino - R35</p>
-<button onclick="addToCart('Cappuccino')">Add to Cart</button>
-
-<hr>
+</div>
+<section>
+    <div class="fancy-divider"><span>&#10022</span></div>
 
 <!-- COLD DRINKS -->
-<h2>Cold Drinks</h2>
+<section class="section">
+<h2 class="section-title">&#10022; Cold Drinks</h2>
+<div class="product-grid"></div>
 
-<img src="images/lamonade.png" width="150">
-<p>Lemonade - R38</p>
-<button onclick="addToCart('Lemonade')">Add to Cart</button>
+<div class="product-card">
+<img src="images/lamonade.png" sizes="(max-width: 600px) 45vw, 130px">
+<h3>Lemonade</h3>
+<p class="price">R38.00</p>
+<button class="btn" onclick="addToCart('Lemonade')">Add to Cart</button>
+</div>
 
-<br><br>
+<div class="product-card">
+<img src="images/smoothies.png" sizes="(max-width: 600px) 45vw, 130px">
+<h3>Smoothie</h3>
+<p class="price">R45.00</p>
+<button class="btn" onclick="addToCart('Smoothie')">Add to Cart</button>
+</div>
+</div>
+</section>
 
-<img src="images/smoothies.png" width="150">
-<p>Smoothie - R45</p>
-<button onclick="addToCart('Smoothie')">Add to Cart</button>
+<div class="fancy-divider"><span>&#9749;</span></div>
 
-<hr>
+<!-- FOOD SECTION -->
+<section class="section">
+<h2 class="section-title">&#127859; Food</h2>
+<div class="product-grid">
 
-<!-- FOOD -->
-<h2>Food</h2>
+<div class="product-card">
+<img src="images/muffin.png" sizes="(max-width: 600px) 45vw, 130px">
+<h3>Muffin</h3>
+<p class="price">R20.00</p>
+<button class="btn" onclick="addToCart('Muffin')">Add to Cart</button>
+</div>
 
-<img src="images/muffin.png" width="150">
-<p>Muffin - R20</p>
-<button onclick="addToCart('Muffin')">Add to Cart</button>
+<div class="product-card">
+<img src="images/sandwhich.png" sizes="(max-width: 600px) 45vw, 130px">
+<h3>Sandwich</h3>
+<p class="price">R50.00</p>
+<button class="btn" onclick="addToCart('Sandwich')">Add to Cart</button>
+</div>
 
-<br><br>
+</div>
+</section>
 
-<img src="images/sandwhich.png" width="150">
-<p>Sandwich - R50</p>
-<button onclick="addToCart('Sandwich')">Add to Cart</button>
-
-<hr>
+<div class="fancy-divider"><span>&#10022;</span></div>
 
 <!-- HOW IT WORKS -->
-<h2>How Ordering Works</h2>
-
-<ol>
+<section class="section">
+<h2 class="section-title">How Ordering Works</h2>
+<ol class="steps-list">
     <li>Click “Add to Cart” on any product</li>
     <li>Your cart updates automatically</li>
     <li>Go to Enquiry page to confirm order</li>
     <li>We will contact you for delivery</li>
 </ol>
+</section>
+</main>
 
-<hr>
+<!-- Footer -->
+<footer class="site-footer">
+    <p>&copy; 2026 Vida e Caffe. All rights reserved.</p>
+</footer>
 
+<!--JAVASCRIPT-->
 <script>
 let cartCount = 0;
 let cartItems = [];
 
-function addToCart(item) {
+function addToCart(product) {
     cartCount++;
-    cartItems.push(item);
-
-    document.getElementById("cart").innerHTML =
-        "Cart: " + cartCount + " items <br> Items: " + cartItems.join(", ");
+    cartItems.push(product);
+    document.getElementById('cart').textContent = `Your Order: ${cartCount} item(s)`;
 }
 </script>
-
-<!-- FOOTER -->
-<p><small>&copy; 2026 Vida e Caffè | Products Page</small></p>
-
 </body>
-</html> 
+</html>
