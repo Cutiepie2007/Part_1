@@ -3,85 +3,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>Document</title>
 </head>
 <body>
-    <h1>Enquiry Page</h1>
+    
+    <!--HEADER-->
+<header class="site-header">
+    <h1>Vida e Caffe</h1>
+    <p class="tagline"><i>Customer Enquiry</i></p>
+    <div class="header-divider"></div>
+</header>
 
-<!-- NAVIGATION -->
-<p>
-    <a href="index.html">Home</a> |
-    <a href="about.html">About</a> |
-    <a href="products.html">Products</a> |
-    <a href="enquiry.html">Enquiry</a> |
-    <a href="contact.html">Contact</a>
-</p>
+    <!-- NAVIGATION -->
+    <nav class="main-navigation">
+        <div class="nav-container">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="products.html">Products</a>
+            <a href="enquiry.html">Enquiry</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
 
-<hr>
+    <!-- MAIN CONTENT -->
+    <main class="page-wrapper">
+        <section class="enquiry-section">
+            <h2 class="section-title">Customer Enquiry Form</h2>
+            <p style="color: var(--text-mid); margin-bottom: 2rem;">Please complete the form below for orders, questions, or feedback.</p>
+        <!--PERSONAL DETAILS-->
+        <h3 style="font-family: var(--font-display); color: var(--brown-light); margin-bottom: 1rem;">Personal Details</h3>
+        <div class="form-group">
+            <p class="form-label">Name:</p>
+            <input type="text" placeholder="Your full name">
+        </div>
 
-<h2>Customer Enquiry Form</h2>
+        <div class="form-group">
+            <p class="form-label">Email:</p>
+            <input type="email" placeholder="your@email.com">
+        </div>
 
-<p>Please complete the form below for orders, questions, or feedback.</p>
+        <div class="form-group">
+            <p class="form-label">Contact Number:</p>
+            <input type="text" placeholder="+27 000 0000">
+        </div>
 
-<hr>
+        <hr style="border:1px solid var(--cream-dark);margin: 1.5 rem 0;">
 
-<h3>Personal Details</h3>
+        <!--TYPE OF ENQUIRY-->
+        <div class="form-group">
+            <p class="form-label">Type of Enquiry:</p>
+            <select>
+                <option>Place an Order</option>
+                <option>Product Information</option>
+                <option>Store Locations</option>
+                <option>General Feedback</option>
+        </select>
+        </div>
 
-<p>Name:</p>
-<input type="text">
+        <hr style="border:1px solid var(--cream-dark);margin: 1.5 rem 0;">
 
-<p>Email:</p>
-<input type="email">
+        <!--YOUR MESSAGE / ORDER DETAILS-->
+        <div class="form-group">
+            <p class="form-label">Your Message / Order Details:</p>
+            <textarea rows="6" placeholder="Enter your message or order details here..."></textarea>
+        </div>
 
-<p>Contact Number:</p>
-<input type="text">
+        <hr style="border:1px solid var(--cream-dark);margin: 1.5 rem 0;">
 
-<hr>
+        <!--PREFERRED STORE-->
+            <div class="form-group">
+                <p class="form-label">Preferred Store:</p>
+                <select>
+                    <option>Cape Town</option>
+                    <option>Johannesburg</option>
+                    <option>Durban</option>
+        </select>
+        </div>
 
-<h3>Type of Enquiry</h3>
+        <hr style="border:1px solid var(--cream-dark);margin: 1.5 rem 0;">
+        <button type="submit" class="btn-submit">Submit Enquiry</button>
+        </div>
+        </section>
 
-<select>
-    <option>Place an Order</option>
-    <option>Product Information</option>
-    <option>Store Locations</option>
-    <option>General Feedback</option>
-</select>
+        <div class="fancy-divider"><span>&#9749;</span></div>
 
-<hr>
+        <!--HOW IT WORKS-->
+        <section class="how-it-works">
+            <h2 class="section-title">How It Works</h2>
+            <ul>
+                <li>Fill in your details</li>
+                <li>Select enquiry type</li>
+                <li>Submit your message</li>
+                <li>We will respond via email or phone</li>
+            </ul>
+        </section>
+    </main>
 
-<h3>Your Message / Order Details</h3>
-
-<textarea rows="6" cols="40"></textarea>
-
-<hr>
-
-<h3>Preferred Store</h3>
-
-<select>
-    <option>Cape Town</option>
-    <option>Johannesburg</option>
-    <option>Durban</option>
-</select>
-
-<hr>
-
-<button type="submit">Submit Enquiry</button>
-
-<hr>
-
-<h2>How It Works</h2>
-
-<ul>
-    <li>Fill in your details</li>
-    <li>Select enquiry type</li>
-    <li>Submit your message</li>
-    <li>We will respond via email or phone</li>
-</ul>
-
-<hr>
-
-<!-- FOOTER -->
-<p><small>&copy; 2026 Vida e Caffè | Enquiry Page</small></p>
+        <!--FOOTER-->
+    <footer class="site-footer">
+        <p>&copy; 2026 <span>Vida e Caffè</span> | Enquiry Page</p>
+    </footer>
 
 </body>
 </html>
