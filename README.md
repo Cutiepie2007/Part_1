@@ -1,125 +1,317 @@
-# Website Project – S.M Web Studio
+# Vida e Caffè Website Project
 
 ## Student Information
-Name: [Your Full Name]  
-Student Number: [Your Student Number]  
-Subject: Web Development  
-Part: Part 1 – Building the Foundation  
+
+**Name:** Saaheerah Majiet  
+**Student Number:** ST10516777  
+**Module:** WEBE5020 – Web Development  
+**Group:** 1
 
 ---
 
-## Project Overview
-This project focuses on the design and development of a professional website using HTML, CSS, and JavaScript. The website is created for a selected organisation and aims to provide clear information, improve user experience, and meet organisational goals. The project is completed in phases, starting with planning and HTML structure.
+# Table of Contents
+
+1. Organisation Overview
+2. Website Goals and Objectives
+3. Current Website Analysis
+4. Proposed Website Features and Functionality
+5. Design and User Experience
+6. Technical Requirements
+7. Timeline and Milestones
+8. Budget
+9. References
 
 ---
 
-## Organisation Overview
-**Name:** Vida e Caffè  
+# 1. Organisation Overview
 
-Vida e Caffè is a coffee shop brand that provides high-quality beverages and quick service to customers. The website is designed to promote the brand, display products, and improve customer engagement.
+## Organisation Name
 
----
+Vida e Caffè
 
-## Website Goals and Objectives
-- Provide clear and accessible information  
-- Promote products and services  
-- Improve user experience  
-- Increase customer engagement  
+Vida e Caffè was established in South Africa and has grown into a globally recognised coffee shop franchise. The company focuses on providing customers with high-quality coffee, excellent service, and a vibrant atmosphere. Its convenient take-away options and strong brand identity have contributed to its popularity.
 
-**Key Performance Indicators (KPIs):**
-- Website traffic  
-- User interaction  
-- Customer enquiries  
+## Mission Statement
 
----
+Vida e Caffè aims to be an outstanding coffee brand known for quality, reliability, and strong customer relationships.
 
-## Key Features and Functionality
-- Homepage with navigation menu  
-- About page with organisation details  
-- Menu page displaying products  
-- Enquiry page with a form  
-- Contact page with locations and contact details  
+## Target Audience
+
+- Students
+- Workers
+- Business professionals
+- Coffee lovers
+- Customers seeking quick and convenient service
 
 ---
 
-## Sitemap
-The website follows a structured hierarchy:
+# 2. Website Goals and Objectives
 
-- Home  
-  - About  
-  - Menu  
-    - Coffee  
-    - Food  
-  - Enquiry  
-  - Contact  
+The website is designed to increase customer engagement and promote the business online.
 
----
+## Goals
 
-## Timeline and Milestones
-- Week 1: Research and planning  
-- Week 2: HTML structure  
-- Week 3: CSS styling  
-- Week 4: JavaScript functionality and testing  
+- Increase awareness of the business
+- Display menu items and products
+- Provide branch and location information
+- Improve customer engagement
+- Strengthen online presence
 
----
+## Key Performance Indicators (KPIs)
 
-## File and Folder Structure
-Root Folder:
-- index.html  
-- about.html  
-- menu.html  
-- enquiry.html  
-- contact.html  
-
-Folders:
-- /css  
-- /js  
-- /images  
+- Increased website exposure
+- Improved customer interaction
+- Growth in customer engagement
+- Increased in-store visits
 
 ---
 
-## Changelog
-**Version 1**
-- Created project folder structure  
-- Added HTML pages  
+# 3. Current Website Analysis
 
-**Version 2**
-- Added content to pages  
-- Created navigation links  
+## Strengths
 
-**Version 3**
-- Updated layout and structure  
+- Clear menu information
+- Effective advertising
+- Strong brand recognition
+- Easy access to company information
 
----
+## Weaknesses
 
-## Technologies Used
-- HTML  
-- CSS  
-- JavaScript  
-- Visual Studio Code  
-- GitHub  
+- Limited interactive features
+- Navigation could be improved
+- Mobile responsiveness can be enhanced
 
----
+## Recommended Improvements
 
-## References (Harvard Style)
-
-Vida e Caffè, 2026. *Official Website*. Available at: https://www.vidaecaffe.com (Accessed: 20 April 2026).
-
-Gift of the Givers, 2026. *Official Website*. Available at: https://giftofthegivers.org (Accessed: 20 April 2026).
-
-Duckett, J., 2011. *HTML and CSS: Design and Build Websites*. Indianapolis: Wiley.
-
-MDN Web Docs, 2025. *HTML, CSS and JavaScript Guide*. Available at: https://developer.mozilla.org (Accessed: 20 April 2026).
-
-W3Schools, 2025. *Web Development Tutorials*. Available at: https://www.w3schools.com (Accessed: 20 April 2026).
-
-Unsplash, 2025. *Free stock images*. Available at: https://unsplash.com (Accessed: 20 April 2026).
-
-Pexels, 2025. *Free stock photos*. Available at: https://www.pexels.com (Accessed: 20 April 2026).
-
-Pixabay, 2025. *Free images and royalty-free stock*. Available at: https://pixabay.com (Accessed: 20 April 2026).
+- Implement online ordering
+- Improve mobile responsiveness
+- Enhance user interaction
+- Simplify navigation
 
 ---
 
-## Notes
-This project is for educational purposes. All images and resources used are from royalty-free platforms and are properly referenced.
+# 4. Proposed Website Features and Functionality
+
+## Website Features
+
+### Home Page
+
+Provides:
+
+- Brand overview
+- Promotions
+- Featured products
+
+### About Page
+
+Provides:
+
+- Company history
+- Mission and vision
+- Brand background
+
+### Menu Page
+
+Displays:
+
+- Coffee products
+- Beverages
+- Snacks
+- Product information
+
+### Store Locator
+
+Allows users to:
+
+- Locate nearby branches
+- View store details
+
+### Contact Page
+
+Provides:
+
+- Contact information
+- Customer enquiry options
+
+## Website Functionality
+
+The website includes:
+
+- Responsive navigation menu
+- Mobile-friendly layout
+- Interactive store locator
+- Fast-loading pages
+- User-friendly navigation
+- Accessible design
+
+---
+
+# 5. Design and User Experience
+
+## Moodboard
+
+The visual inspiration for the website was sourced from royalty-free image platforms such as Unsplash.
+
+## Colour Scheme
+
+The website uses a warm coffee-inspired colour palette.
+
+| Colour | Hex Code | Purpose |
+|----------|----------|----------|
+| Dark Brown | #2c1a0e | Header, Footer, Navigation |
+| Medium Brown | #6b3a2a | Buttons, Headings |
+| Light Brown | #a0522d | Secondary accents |
+| Cream | #f5f0e8 | Main background |
+| Cream Dark | #e8dcc8 | Secondary backgrounds |
+| Gold | #c8a96e | Highlights and borders |
+| Gold Light | #e8c98e | Hover effects |
+| White | #ffffff | Forms and content boxes |
+| Dark Text | #1a0e05 | Main body text |
+
+## Typography
+
+The website uses modern and readable typography.
+
+| Element | Font |
+|----------|------|
+| Main Heading | Playfair Display |
+| Sub Heading | Playfair Display |
+| Section Titles | Playfair Display |
+| Body Text | Lato |
+| Navigation Links | Lato |
+| Buttons | Lato |
+| Form Labels | Lato |
+
+## Layout and Design
+
+The layout follows a clean and structured design approach with:
+
+- Consistent spacing
+- Easy navigation
+- Visual hierarchy
+- High-quality images
+- Responsive design
+
+## User Experience Considerations
+
+The website is designed to:
+
+- Improve readability
+- Enhance accessibility
+- Provide intuitive navigation
+- Deliver a consistent experience across devices
+
+---
+
+# 6. Technical Requirements
+
+## Domain
+
+swanked.co.za
+
+## Hosting
+
+Managed Shared Cloud Hosting
+
+Benefits include:
+
+- Server maintenance
+- Security management
+- Scalability
+- Reliable performance
+
+## Security
+
+SSL/TLS Certificate (HTTPS)
+
+Benefits include:
+
+- Data encryption
+- Secure communication
+- Protection of customer information
+
+## Availability
+
+99.9% uptime SLA to ensure consistent website accessibility.
+
+---
+
+# 7. Timeline and Milestones
+
+| Phase | Activity |
+|---------|----------|
+| Week 1 | Research and Planning |
+| Week 2 | Wireframes and Design |
+| Week 3 | HTML Structure Development |
+| Week 4 | CSS Styling |
+| Week 5 | Responsive Design |
+| Week 6 | Testing and Improvements |
+| Week 7 | Final Submission |
+
+---
+
+# 8. Budget
+
+| Item | Estimated Cost |
+|--------|----------------|
+| Domain Name | R100 – R200 per year |
+| Web Hosting | R300 – R600 per year |
+| Development Tools | Free |
+| Images and Resources | Free |
+
+## Total Estimated Cost
+
+**R400 – R800 per year**
+
+This budget is affordable and suitable for a small-scale website project.
+
+---
+
+# Project Structure
+
+```text
+vida-e-caffe-website/
+│
+├── index.html
+├── about.html
+├── menu.html
+├── stores.html
+├── contact.html
+│
+├── css/
+│   └── style.css
+│
+├── js/
+│   └── script.js
+│
+├── images/
+│
+└── README.md
+```
+
+# References
+
+- Duckett, J. (2011). HTML and CSS: Design and Build Websites.
+- Mozilla Developer Network (MDN)
+- W3Schools Web Development Tutorials
+- Unsplash
+- Pexels
+- Pixabay
+- Vida e Caffè Official Website
+- ChatGPT
+- QuillBot
+
+---
+
+# Author
+
+**Saaheerah Majiet**  
+**Student Number:** ST10516777  
+**Module:** WEBE5020 – Web Development  
+**Group:** 1
+
+---
+
+# License
+
+This project was created for educational purposes as part of the WEBE5020 Web Development assignment.
