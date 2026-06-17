@@ -27,6 +27,7 @@
     </nav>
 
     <!-- MAIN CONTENT -->
+     <form id="enquiryForm">
     <main class="page-wrapper">
         <section class="enquiry-section">
             <h2 class="section-title">Customer Enquiry Form</h2>
@@ -35,17 +36,17 @@
         <h3 style="font-family: var(--font-display); color: var(--brown-light); margin-bottom: 1rem;">Personal Details</h3>
         <div class="form-group">
             <p class="form-label">Name:</p>
-            <input type="text" placeholder="Your full name">
+            <input type="text" id="enquiryName" placeholder="Your full name">
         </div>
 
         <div class="form-group">
             <p class="form-label">Email:</p>
-            <input type="email" placeholder="your@email.com">
+            <input type="email" id="enquiryEmail" placeholder="your@email.com">
         </div>
 
         <div class="form-group">
             <p class="form-label">Contact Number:</p>
-            <input type="text" placeholder="+27 000 0000">
+            <input type="text" id="enquiryPhone" placeholder="+27 000 0000">
         </div>
 
         <hr style="border:1px solid var(--cream-dark);margin: 1.5 rem 0;">
@@ -53,7 +54,7 @@
         <!--TYPE OF ENQUIRY-->
         <div class="form-group">
             <p class="form-label">Type of Enquiry:</p>
-            <select>
+            <select id="enquiryType">
                 <option>Place an Order</option>
                 <option>Product Information</option>
                 <option>Store Locations</option>
@@ -66,7 +67,7 @@
         <!--YOUR MESSAGE / ORDER DETAILS-->
         <div class="form-group">
             <p class="form-label">Your Message / Order Details:</p>
-            <textarea rows="6" placeholder="Enter your message or order details here..."></textarea>
+            <textarea id="enquiryMessage" rows="6" placeholder="Enter your message or order details here..."></textarea>
         </div>
 
         <hr style="border:1px solid var(--cream-dark);margin: 1.5 rem 0;">
@@ -74,7 +75,7 @@
         <!--PREFERRED STORE-->
             <div class="form-group">
                 <p class="form-label">Preferred Store:</p>
-                <select>
+                <select id="enquiryStore">
                     <option>Cape Town</option>
                     <option>Johannesburg</option>
                     <option>Durban</option>
@@ -84,7 +85,9 @@
         <hr style="border:1px solid var(--cream-dark);margin: 1.5 rem 0;">
         <button type="submit" class="btn-submit">Submit Enquiry</button>
         </div>
+        <div id="enquiryResult"></div>
         </section>
+        </form>
 
         <div class="fancy-divider"><span>&#9749;</span></div>
 
