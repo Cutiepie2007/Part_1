@@ -759,6 +759,17 @@ body{
         100% { background-position: 0% 50%; }
     }
 
+/*Success message and Error message*/
+
+.success-message {
+    background: #d4edda;
+    color: #155724;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 10px;
+    
+}
+
 
 
 
