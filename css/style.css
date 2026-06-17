@@ -63,7 +63,7 @@ body{
     position: relative;
 }
 
-.site-header tagline{
+.site-header .tagline{
     font-size: 1.1rem;
     font-style: italic;
     color: var(--cream-dark);
@@ -79,7 +79,7 @@ body{
 }
 
 /*NAVIGATION*/
-.main-nav {
+.main-navigation {
    background-color: var(--brown-mid);
    position: sticky;
    top: 0;
@@ -97,7 +97,7 @@ body{
     gap: 0.5rem;
 }
 
-.main-nav a {
+.main-navigation a {
     color: var(--cream);
     text-decoration: none;
     font-weight: 700;
@@ -110,7 +110,7 @@ body{
     position: relative;
 }
 
-.main-nav a::after {
+.main-navigation a::after {
     content: '';
     position: absolute;
     left: 0;
@@ -122,11 +122,11 @@ body{
     transition: var(--transition);
 }
 
-.main-nav a:hover {
+.main-navigation a:hover {
     color: var(--gold-light);
 }
 
-.main-nav a:hover::after {
+.main-navigation a:hover::after {
     width: 80%;
 }
 
