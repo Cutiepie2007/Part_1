@@ -131,7 +131,7 @@ body{
 }
 
 /*MAIN CONTENT WRAPPER*/
-.Page-content {
+.page-wrapper {
     max-width: 1100px;
     margin: 0 auto;
     padding: 3rem 2rem;
@@ -339,7 +339,7 @@ body{
     font-size: 1.1rem;
 }
 
-.product-card.price {
+.product-card .price {
     color: var(--brown-light);
     font-weight: 700;
     font-size: 1rem;
@@ -379,7 +379,7 @@ body{
     box-shadow: var(--shadow);
 }
 
-.cart-box span.icon {
+.cart-box .cart-icon {
     font-size: 1.8rem;
 }
 
