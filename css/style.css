@@ -770,7 +770,13 @@ body{
     
 }
 
-
+.error-message {
+    background: #f8d7da;
+    color: #721c24;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 10px;
+}
 
 
 
