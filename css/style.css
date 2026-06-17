@@ -478,7 +478,7 @@ body{
 }
 
 /*FORM*/
-.font-wrapper {
+.form-wrapper {
     background: var(--white);
     border-radius: var(--radius);
     padding: 2rem;
@@ -526,7 +526,7 @@ body{
     min-height: 140px;
 }
 
-btn-submit {
+.btn-submit {
    background: linear-gradient(135deg,var(--brown-dark),var(--brown-mid));
     color: var(--white);
     border: none;
