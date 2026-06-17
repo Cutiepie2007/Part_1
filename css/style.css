@@ -711,5 +711,33 @@ body{
         100% { transform: translateY(-40px); opacity: 0; }
     }
 
+    .product-card {
+        animation: floatBeans 4s ease-in-out infinite;
+    }
+
+    .hero-section {
+        background: 
+        linear-gradient(
+            135deg,
+            #4B2E0B,
+            #7B4F2B,
+            #C9A66B
+        );
+
+        background-size: 400% 400%;
+
+        animation: gradientMove 10s ease infinite;
+
+        border-radius: var(--radius);
+
+        padding: 4rem 3rem;
+
+        color: white;
+
+        text-align: center;
+    }
+
+    
+
 
 }
