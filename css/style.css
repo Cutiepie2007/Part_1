@@ -557,6 +557,8 @@ body{
     padding: 1.5rem;
     box-shadow: var(--shadow);
     border-left: 4px solid var(--gold);
+    cursor: pointer;
+    transition: translateY(-3px);
 }
 
 .faq-item h4 {
@@ -569,6 +571,15 @@ body{
 .faq-item p {
     color: var(--text-mid);
     font-size: 0.95rem;
+    display: none;
+}
+
+.faq-item:hover {
+    transform: translateY(-3px);
+}
+
+.faq-item.active p {
+    display: block;
 }
 
 /*HOW IT WORKS*/
