@@ -778,6 +778,15 @@ body{
     margin-top: 10px;
 }
 
+/*coffee cup 3D animation*/
+
+.coffee-cup {
+    font-size: 5rem;
+    display: inline-block;
+    animation: cupSpin 8s linear infinite;
+    transform-style: preserve-3d;
+}
+
 
 
 
