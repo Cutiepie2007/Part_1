@@ -117,3 +117,43 @@ function filterProducts(category) {
     });
 }
 
+/*FAQ ACCORDION*/
+
+function setupFAQ() {
+
+    const faqItems =
+        document.querySelectorAll(".faq-item");
+
+    faqItems.forEach(item => {
+
+        const answer =
+            item.querySelector("p");
+
+        if (answer) {
+            answer.style.display = "none";
+        }
+
+        item.addEventListener("click", () => {
+
+            faqItems.forEach(other => { 
+                
+                if (other !== item) {
+
+                    const p =
+                        other.querySelector("p");
+
+                    if (p) {
+                        p.style.display = "none";
+                    }
+                }
+            });
+
+            if (answer) {  
+                    answer.style.display =
+                        answer.style.display === "block"
+                        ? "none"
+                        : "block";
+            }
+        });
+    });
+}
