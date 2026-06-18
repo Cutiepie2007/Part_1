@@ -228,12 +228,15 @@ body{
 }
 
 .card {
-    background: var(--white);
-    border-radius: var(--radius);
-    padding: 2rem 1.5rem;
-    box-shadow: var(--shadow);
+    background: linear-gradient(
+        135deg
+        var(--brown-dark)
+        var(--brown-mid)
+    )
+    color var(--cream);
     border-top: 4px solid var(--gold);
-    transition: var(--transition);
+    box-shadow: var(--shadow);
+    
 }
 
 .card:hover {
@@ -246,11 +249,13 @@ body{
     color: var(--brown-mid);
     margin-bottom: 0.75rem;
     font-size: 1.2rem;
+    color: var(--gold-light);
 }
 
 .card p {
     color: var(--text-mid);
     font-size: 0.95rem;
+    color: var(--cream-dark);
 }
 
 /*CALL TO ACTION*/
