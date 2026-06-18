@@ -351,3 +351,30 @@ function animateHero() {
 
     }, 50);
 }
+
+/*SCROLL ANIMATION*/
+
+function revealOnScroll() {
+
+    const cards =
+        document.querySelectorAll(
+            ".card, .product-card, .info-block"
+        );
+
+    const trigger =
+        window.innerHeight * 0.85;
+
+    cards.forEach(card => {
+
+        const top =
+            card.getBoundingClientRect().top;
+
+        if (top < trigger) {
+            card.classList.add("show");
+        }
+ });
+}
+window.addEventListener(
+    "scroll",
+    revealOnScroll
+);
