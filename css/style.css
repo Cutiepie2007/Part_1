@@ -315,7 +315,21 @@ box-shadow: var(--shadow);
         transparent
     );
     
+    transition: 0.7s;
 }
+
+.highlights-section .card:hover::before {
+    left: 120%;
+}
+
+.highlights-section .card:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--shadow-strong);
+}
+
+
+
+
 /*CALL TO ACTION*/
 .cta-section {
     background: linear-gradient(135deg,var(--brown-mid) 0%, var(--brown-light) 100%);
