@@ -276,6 +276,31 @@ box-shadow: var(--shadow);
     transform: translateX(-50%);
 }
 
+/*card grid inside highlights section*/
+.highlights-section .card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.5rem;
+}
+
+/*individual highlight card*/
+.highlights-section .card {
+   background: linear-gradient(
+    135deg
+    var(--brown-dark)
+    var(--brown-mid)
+   );
+   border-radius: var(--radius);
+   padding: 2rem;
+   text-align: center;
+   color: var(--cream);
+   border-top: 4px solid var(--gold);
+   box-shadow: var(--shadow);
+   transition: all 0.4s ease;
+   position: relative;
+   overflow: hidden;
+}
+
 
 /*CALL TO ACTION*/
 .cta-section {
