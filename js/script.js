@@ -264,3 +264,29 @@ function fakeAjaxSubmit() {
 
     }, 1500);
 }
+/*SUCCESS / ERROR MESSAGE*/
+
+function showMessage(message, type) {
+
+    const oldMessage =
+        document.querySelector(".popup-message");
+
+    if (oldMessage) {
+        oldMessage.remove();
+    }
+
+    const popup =
+        document.createElement("div");
+
+    popup.className =
+        `popup-message ${type}`;
+
+    popup.textContent = message;
+
+    document.body.appendChild(popup);
+    setTimeout(() => {
+
+        popup.remove();
+
+    }, 3000);
+}
