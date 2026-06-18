@@ -248,3 +248,19 @@ function validateEnquiryForm() {
 }
 /* AJAX SIMULATION*/
 
+function fakeAjaxSubmit() {
+
+    showMessage(
+        "Sending message...",
+        "success"
+    );
+
+    setTimeout(() => {
+
+        showMessage(
+            "Message sent successfully!",
+            "success"
+        );
+
+    }, 1500);
+}
