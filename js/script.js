@@ -212,3 +212,37 @@ function validateContactForm() {
 }
 
 /*ENQUIRY FORM VALIDATION*/
+
+function validateEnquiryForm() {
+
+    const inputs =
+        document.querySelectorAll(
+            ".enquiry-section input, .enquiry-section textarea"
+        );
+
+    let valid = true;
+
+    inputs.forEach(input => {
+
+        if (input.value.trim() === "") {
+            valid = false;
+        }
+
+    });
+    if (!valid) {
+
+        showMessage(
+            "Please complete all enquiry fields.",
+            "error"
+        );
+
+        return false;
+    }
+
+    showMessage(
+        "Enquiry submitted successfully!",
+        "success"
+    );
+
+    return true;
+}
