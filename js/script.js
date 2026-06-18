@@ -40,4 +40,22 @@ function updateCartDisplay() {
     localStorage.setItem("vidaTotal", total);
 }
 
+function loadCart() {
+
+    const savedCart =
+        JSON.parse(localStorage.getItem("vidaCart"));
+
+    const savedTotal =
+        localStorage.getItem("vidaTotal");
+
+    if (savedCart) {
+        cart = savedCart;
+    }
+
+    if (savedTotal) {
+        total = Number(savedTotal);
+    }
+
+    updateCartDisplay();
+}
 }
