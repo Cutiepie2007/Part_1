@@ -290,3 +290,45 @@ function showMessage(message, type) {
 
     }, 3000);
 }
+
+/*IMAGE LIGHTBOX*/
+
+function setupLightbox() {
+
+    const images =
+        document.querySelectorAll(
+            ".product-card img"
+        );
+
+    images.forEach(image => {
+
+        image.addEventListener("click", () => {
+
+            const overlay =
+                document.createElement("div");
+
+            overlay.classList.add(
+                "lightbox-overlay"
+            );
+
+            overlay.innerHTML = `
+                <img src="${image.src}" alt="">
+            `;
+
+            document.body.appendChild(
+                overlay
+            );
+
+            overlay.addEventListener(
+                "click",
+                () => {
+                    overlay.remove();
+                }
+            );
+
+        });
+
+    });
+
+}
+
