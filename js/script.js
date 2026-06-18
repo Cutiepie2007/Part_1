@@ -246,3 +246,5 @@ function validateEnquiryForm() {
 
     return true;
 }
+/* AJAX SIMULATION*/
+
