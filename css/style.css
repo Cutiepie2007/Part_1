@@ -312,6 +312,7 @@ box-shadow: var(--shadow);
         90deg
         transparent,
         rgba(255,255,255,0.15),
+        transparent
     );
     
 }
