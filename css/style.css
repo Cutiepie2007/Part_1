@@ -327,9 +327,32 @@ box-shadow: var(--shadow);
     box-shadow: var(--shadow-strong);
 }
 
+.highlights-section .card h3 {
+    font-family: var(--font-display);
+    color: var(--gold-light);
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
 
+.highlights-section .card p {
+    color: var(--cream-dark);
+    font-size: 0.95rem;
+    line-height: 1.7;
+}
 
+.highlights-section .card h3:hover {
+    transform: scale(1.05);
+}
 
+@media (max-width: 600px) {
+    .highlights-section {
+        padding: 2rem 1.5rem;
+    }
+
+    .highlights-section .card {
+        grid-template-columns: 1fr;
+    }
+}
 /*CALL TO ACTION*/
 .cta-section {
     background: linear-gradient(135deg,var(--brown-mid) 0%, var(--brown-light) 100%);
