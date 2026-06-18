@@ -34,5 +34,10 @@ function updateCartDisplay() {
         `Your Order: ${cart.length} item(s) | Total:R$ {Total}`;
     }
 
-    
+    function saveCart() {
+
+    localStorage.setItem("vidaCart", JSON.stringify(cart));
+    localStorage.setItem("vidaTotal", total);
+}
+
 }
