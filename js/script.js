@@ -435,3 +435,24 @@ document.addEventListener(
         }
     }
 );
+
+/* PRODUCT SEARCH */
+function searchProducts() {
+
+    let input = document.getElementById("searchInput");
+    let filter = input.value.toLowerCase();
+
+    let products = document.querySelectorAll(".product-card");
+
+    products.forEach(function(product){
+
+        let productName = product.querySelector("h3").textContent.toLowerCase();
+
+        if(productName.includes(filter)){
+            product.style.display = "block";
+        } else {
+            product.style.display = "none";
+        }
+
+    });
+}
