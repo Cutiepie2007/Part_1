@@ -157,3 +157,56 @@ function setupFAQ() {
         });
     });
 }
+
+/* CONTACT FORM VALIDATION*/
+
+function validateContactForm() {
+
+    const name =
+        document.querySelector(
+            '.contact-form-section input[type="text"]'
+        );
+
+    const email =
+        document.querySelector(
+            '.contact-form-section input[type="email"]'
+        );
+
+    const message =
+        document.querySelector(
+            '.contact-form-section textarea'
+        );
+    if (!name || !email || !message) {
+        return false;
+    }
+
+    if (
+        name.value.trim() === "" ||
+        email.value.trim() === "" ||
+        message.value.trim() === ""
+    ) {
+
+        showMessage(
+            "Please complete all fields.",
+            "error"
+        );
+
+        return false;
+    }
+    const emailPattern =
+        /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if (!emailPattern.test(email.value)) {
+
+        showMessage(
+            "Please enter a valid email.",
+            "error"
+        );
+
+        return false;
+    }
+
+    fakeAjaxSubmit();
+
+    return true;
+}
