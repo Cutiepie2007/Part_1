@@ -378,3 +378,60 @@ window.addEventListener(
     "scroll",
     revealOnScroll
 );
+
+/* INITIALISE WEBSITE*/
+
+document.addEventListener(
+    "DOMContentLoaded",
+    () => {
+
+        loadCart();
+
+        setupFAQ();
+
+        setupLightbox();
+
+        animateHero();
+
+        revealOnScroll();
+
+        const contactButton =
+            document.querySelector(
+                ".contact-form-section .btn-submit"
+            );
+
+        if (contactButton) {
+
+            contactButton.addEventListener(
+                "click",
+                function (e) {
+
+                    e.preventDefault();
+
+                    validateContactForm();
+
+                }
+            );
+
+        }           
+        
+        const enquiryButton =
+            document.querySelector(
+                ".enquiry-section .btn-submit"
+            );
+
+        if (enquiryButton) {
+
+            enquiryButton.addEventListener(
+                "click",
+                function (e) {
+
+                    e.preventDefault();
+
+                    validateEnquiryForm();
+
+                }
+            );
+        }
+    }
+);
