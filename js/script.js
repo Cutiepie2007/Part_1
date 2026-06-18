@@ -59,3 +59,35 @@ function loadCart() {
     updateCartDisplay();
 }
 }
+
+/*PRODUCT SEARCH*/
+
+function searchProducts() {
+
+    const input =
+        document.getElementById("searchInput");
+
+    if (!input) return;
+
+    const filter =
+        input.value.toLowerCase();
+
+    const cards =
+        document.querySelectorAll(".product-card");
+
+    cards.forEach(card => {
+        const title =
+            card.querySelector("h3")
+                .textContent
+                .toLowerCase();
+
+        if (title.includes(filter)) {
+            card.style.display = "block";
+        } else {
+            card.style.display = "none";
+        }
+
+    });
+}
+
+
