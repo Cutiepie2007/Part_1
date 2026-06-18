@@ -792,4 +792,17 @@ body{
     100% { transform: rotateY(360deg); }
 }
 
+/*Coffee steam animation*/
+.hero-animation {
+    position: relative;
+   perspective: 1000px;
+   margin-bottom: 2rem;
+}
+
+.coffee-cup {
+    font-size: 5rem;
+    display: inline-block;
+    animation: cupRotate 6s infinite ease-in-out;
+    transform-style: preserve-3d;
+    
 }
