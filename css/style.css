@@ -804,5 +804,48 @@ body{
     display: inline-block;
     animation: cupRotate 6s infinite ease-in-out;
     transform-style: preserve-3d;
-    
+
 }
+
+@keyframes cupRotate {
+    0% { transform: rotateY(0deg); }
+    50% { transform: rotateY(180deg); }
+    100% { transform: rotateY(360deg); }
+}
+
+.steam {
+    position: absolute;
+    width: 10px;
+    height: 50px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+   filter: blur(5px);
+    animation: steamRise 4s infinite;
+}
+
+.steam1 {
+    left: 48%;
+}
+
+.steam2 {
+    left: 52%;
+    animation-delay: 1s;
+}
+
+.steam3 {
+    left: 56%;
+    animation-delay: 2s;
+}
+
+@keyframes steamRise {
+    from {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    to {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+}
+}
+
