@@ -90,4 +90,30 @@ function searchProducts() {
     });
 }
 
+/*PRODUCT FILTER*/
+
+function filterProducts(category) {
+
+    const cards =
+        document.querySelectorAll(".product-card");
+
+    cards.forEach(card => {
+
+        const text =
+            card.textContent.toLowerCase();
+
+        if (category === "all") {
+
+            card.style.display = "block";
+
+        } else if (text.includes(category.toLowerCase())) {
+
+            card.style.display = "block";
+        } else {
+
+            card.style.display = "none";
+
+        }
+    });
+}
 
