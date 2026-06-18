@@ -332,3 +332,22 @@ function setupLightbox() {
 
 }
 
+/* HERO ANIMATION*/
+function animateHero() {
+
+    const hero =
+        document.querySelector(".hero-logo");
+
+    if (!hero) return;
+
+    let rotation = 0;
+
+    setInterval(() => {
+
+        rotation += 1;
+
+        hero.style.transform =
+            `rotate(${Math.sin(rotation/20)*2}deg)`;
+
+    }, 50);
+}
