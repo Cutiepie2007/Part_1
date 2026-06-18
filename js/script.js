@@ -210,3 +210,5 @@ function validateContactForm() {
 
     return true;
 }
+
+/*ENQUIRY FORM VALIDATION*/
