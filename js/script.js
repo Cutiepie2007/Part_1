@@ -19,7 +19,7 @@ const prices = {
 function addToCart(product) {
     cart.push(product);
     if (prices[product]) {
-        Total += prices[product];
+       total += prices[product];
     } 
     
     updateCartDisplay();
