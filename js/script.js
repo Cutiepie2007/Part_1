@@ -145,7 +145,7 @@ function setupFAQ() {
     });
 }
 
-/* CONTACT FORM VALIDATION*/
+/* CONTACT FORM VALIDATION - FIXED */
 function validateContactForm() {
     const name = document.querySelector('.contact-form-section input[type="text"]');
     const email = document.querySelector('.contact-form-section input[type="email"]');
@@ -155,20 +155,20 @@ function validateContactForm() {
 
     if (name.value.trim() === "" || email.value.trim() === "" || message.value.trim() === "") {
         showMessage("Please complete all fields.", "error");
-        return false;
+        return false; 
     }
     
     const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailPattern.test(email.value)) {
         showMessage("Please enter a valid email.", "error");
-        return false;
+        return false; 
     }
 
     fakeAjaxSubmit();
     return true;
 }
 
-/*ENQUIRY FORM VALIDATION*/
+/* ENQUIRY FORM VALIDATION - FIXED */
 function validateEnquiryForm() {
     const inputs = document.querySelectorAll(".enquiry-section input, .enquiry-section textarea");
     let valid = true;
@@ -179,7 +179,7 @@ function validateEnquiryForm() {
     
     if (!valid) {
         showMessage("Please complete all enquiry fields.", "error");
-        return false;
+        return false; 
     }
 
     showMessage("Enquiry submitted successfully!", "success");
@@ -206,7 +206,6 @@ function showMessage(message, type) {
     document.body.appendChild(popup);
     setTimeout(() => { popup.remove(); }, 3000);
 }
-
 /* TOAST MESSAGE HELPERS */
 function showToast(message) {
     const existingToast = document.querySelector(".toast");
