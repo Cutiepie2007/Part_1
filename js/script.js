@@ -456,3 +456,28 @@ function searchProducts() {
 
     });
 }
+
+// Inside your renderGallery loop:
+<img src="${p.image}" 
+     alt="${p.name}" 
+     class="clickable-image" 
+     onclick="openLightbox('${p.image}')" 
+     style="cursor: pointer;"></img>
+
+     // --- ADD THESE FUNCTIONS TO VALIDATION.JS ---
+
+function openLightbox(imageUrl) {
+    const lightbox = document.getElementById('lightbox');
+    const fullImage = document.getElementById('full-image');
+    fullImage.src = imageUrl;
+    lightbox.style.display = 'flex'; // This reveals your div
+}
+
+function closeLightbox() {
+    document.getElementById('lightbox').style.display = 'none'; // This hides it
+}
+
+// --- UPDATE YOUR RENDERGALLERY LOOP ---
+// Find your existing renderGallery and ensure the img tag looks like this:
+//<img src="${p.image}" alt="${p.name}" class="clickable-image" 
+//onclick="openLightbox('${p.image}')" style="cursor: pointer;">
