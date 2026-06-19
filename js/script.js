@@ -94,7 +94,7 @@ function renderGallery(productList) {
                     <div class="product-category">${p.category}</div>
                     <span class="product-price">R$ ${p.price.toFixed(2)}</span>
                 </div>
-                <button class="btn-add" onclick="addToCart('${p.name}')">Add to Cart</button>
+                <button class="btn" onclick="addToCart('${p.name}')">Add to Cart</button>
                 <div class="cart-icon-wrapper" style="pointer-events: none;">
                     <svg class="cart-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24px" height="24px">
                         <path d="M7 18c-1.104 0-2 .896-2 2s.896 2 2 2 2-.896 2-2-.896-2-2-2zm10 0c-1.104 0-2 .896-2 2s.896 2 2 2 2-.896 2-2-.896-2-2-2zM7.16 14l.84-4h8l.84 4H7.16zM20 4h-3.586l-1.707-1.707A.999.999 0 0014.586 2H5a1 1 0 000 2h9l3.293 3.293A.999.999 0 0018.707 8H22a1 1 0 000-2z"/>
