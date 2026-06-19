@@ -20,16 +20,6 @@ let currentCategoryFilter = "all";
 let cart = [];
 let total = 0;
 
-const prices = {
-    "Espresso": 25.00,
-    "Cappuccino": 35.00,
-    "Latte": 40.00,
-    "Lemonade": 38.00,
-    "Smoothie": 45.00,
-    "Muffin": 20.00,
-    "Sandwich": 50.00,
-};
-
 function addToCart(productName) {
 //find the full product object from the array
 const product = products.find(p => p.name === productName);
