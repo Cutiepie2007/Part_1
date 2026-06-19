@@ -37,7 +37,7 @@ if (product) {
 function updateCartDisplay() {
     const cartDisplay = document.getElementById("cart");  
     if (cartDisplay) {
-        cartDisplay.innerHTML = `Your Order: ${cart.length} item(s) | Total: R$ ${total.toFixed(2)}`;
+        cartDisplay.innerHTML = `Your Order: ${cart.length} item(s) | Total: R ${total.toFixed(2)}`;
     }
 
     const countElement = document.getElementById("cart-count");
@@ -82,7 +82,7 @@ function renderGallery(productList) {
                 <div class="product-text-meta">
                     <h3 class="product-name">${p.name}</h3>
                     <div class="product-category">${p.category}</div>
-                    <span class="product-price">R$ ${p.price.toFixed(2)}</span>
+                    <span class="product-price">R ${p.price.toFixed(2)}</span>
                 </div>
                 <button class="btn" onclick="addToCart('${p.name}')">Add to Cart</button>
                 <div class="cart-icon-wrapper" style="pointer-events: none;">
