@@ -536,24 +536,34 @@ renderGallery(products);
 function addToCart(itemName) {
     //Increment Count
     cartTotal++;
-    const countElement = document.getElementById(cart-count);
+    const countElement = document.getElementById("cart-count");
     if (countElement) countElement.textContent = cartTotal
 
     //Trigger Toast
-    showToasts(`$(itemName) added to your card`);
+    showToast(`${itemName} added to your cart`);
 }
 
 // 6. UI Helpers
-function showToasts(message) {
-    const toast = document.getElementById("toast")
-    if (toast) return;
-    toast.textContent = message
-    toast.style.display = "block"
-    setTimeout(() => { toast.style.display = "none";}, 3000);
-}
+function showToast(message) {
 
+    const existingToast = document.querySelector(".toast");
+
+    if (existingToast) {
+        existingToast.remove();
+    }
+
+    const toast = document.createElement("div");
+    toast.className = "toast";
+    toast.textContent = message;
+
+    document.body.appendChild(toast);
+
+    setTimeout(() => {
+        toast.remove();
+    }, 3000);
+}
 //7.Initialze
-document.addEventListener (`DOMConentLoaded`, ()=> {
+document.addEventListener (`DOMContentLoaded`, ()=> {
     if (document.getElementById(`gallery`)) {
         renderGallery(products);
     }
