@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
-
-Sitemap: https://vidaecaffee.netlify.app/sitemap.xml
+ https://vidaecaffee.netlify.app/sitemap.xml
+Sitemap:

@@ -9,7 +9,7 @@ const products = [
     {name: "Lemonade", category: "beverage", price: 38.00, image: "images/lamonade.png"},
     {name: "Smoothie", category: "beverage", price: 45.00, image: "images/smoothies.png"},
     {name: "Muffin", category: "food", price: 20.00, image: "images/muffin.png"},
-    {name: "Sandwich", category: "food", price: 50.00, image: "images/sandwich.png"}
+    {name: "Sandwich", category: "food", price: 50.00, image: "images/sandwhich.png"}
 ];
 
 /*CURRENT SEARCH/FILTER STATES*/
