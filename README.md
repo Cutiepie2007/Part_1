@@ -147,6 +147,10 @@ vidaecaffe/
 
 ---
 
+## SITEMAP
+
+[Vida e cafee website sitemap](Documents/Sitemap.docx)
+
 ## 📋 Changelog
 
 ### Part 1 Details
