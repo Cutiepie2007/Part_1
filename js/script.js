@@ -553,9 +553,10 @@ function showToasts(message) {
 }
 
 //7.Initialze
-document.addEventListener(DOMConentLoaded`, ()`=> {
+document.addEventListener (`DOMConentLoaded`, ()=> {
     if (document.getElementById(`gallery`)) {
         renderGallery(products);
     }
+}
 // Note: if you wire a search input, call filterGallery() on input events
-
+)
