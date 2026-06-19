@@ -3,13 +3,13 @@ INTERACTIVE WEBSITE FEATURES */
 
 /*DATA*/
 const products = [
-    {name: "Espresso", category: "coffee", price: 25.00, image: "images/espresso.jpg"},
-    {name: "Cappuccino", category: "coffee", price: 35.00, image: "images/cappuccino.jpg"},
-    {name: "Latte", category: "coffee", price: 40.00, image: "images/latte.jpg"},
-    {name: "Lemonade", category: "beverage", price: 38.00, image: "images/lemonade.jpg"},
-    {name: "Smoothie", category: "beverage", price: 45.00, image: "images/smoothie.jpg"},
-    {name: "Muffin", category: "food", price: 20.00, image: "images/muffin.jpg"},
-    {name: "Sandwich", category: "food", price: 50.00, image: "images/sandwich.jpg"}
+    {name: "Espresso", category: "coffee", price: 25.00, image: "images/Espresso.jpeg"},
+    {name: "Cappuccino", category: "coffee", price: 35.00, image: "images/Cappuccino.png"},
+    {name: "Latte", category: "coffee", price: 40.00, image: "images/latte.png"},
+    {name: "Lemonade", category: "beverage", price: 38.00, image: "images/lamonade.png"},
+    {name: "Smoothie", category: "beverage", price: 45.00, image: "images/smoothies.png"},
+    {name: "Muffin", category: "food", price: 20.00, image: "images/muffin.png"},
+    {name: "Sandwich", category: "food", price: 50.00, image: "images/sandwich.png"}
 ];
 
 /*CURRENT SEARCH/FILTER STATES*/
@@ -31,19 +31,21 @@ const prices = {
 };
 
 function addToCart(productName) {
+//find the full product object from the array
+const product = products.find(p => p.name === productName);
+
+if (product) {
     cart.push(productName);
-    
-    if (prices[productName]) {
-       total += prices[productName];
-    } 
-    
+    total += product.price;// Pull price directly from th product object
+
     updateCartDisplay();
     saveCart();
-    showToast(`${productName} added to your cart`);
+    showToast(`${productName} added to your cart`)
+}
 }
 
 function updateCartDisplay() {
-    const cartDisplay = document.getElementById("cart");
+    const cartDisplay = document.getElementById("cart");  
     if (cartDisplay) {
         cartDisplay.innerHTML = `Your Order: ${cart.length} item(s) | Total: R$ ${total.toFixed(2)}`;
     }
