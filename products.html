@@ -14,7 +14,6 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Vida e Caffe - Products</title>
 </head>
-<script src="js/script.js"></script>
 <body>
     <!--Header-->
     <header class="site-header">
@@ -43,13 +42,9 @@
 </div>
 
 <div class="search-container">
-<input
-type="text"
-id="searchInput"
-placeholder="Search products..."
-onkeyup="searchProducts()">
+<input type="text"id="searchInput"placeholder="Search products...">
 </div>
-
+<div id="gallery"></div>
 <div class="fancy-divider"><span>&#10022;</span></div>
 
 <!-- HOW IT WORKS -->
@@ -72,6 +67,8 @@ onkeyup="searchProducts()">
     <span class="close-btn">&times;</span>
     <img id="full-image" src="" alt="Full size product image">
 </div>
+
+<script src="js/script.js"></script>
 
 </body>
 </html>

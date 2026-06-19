@@ -72,6 +72,9 @@ function loadCart() {
 /* GALLERY RENDER & UNIFIED FILTERING */
 function renderGallery(productList) {
     const gallery = document.getElementById('gallery');
+    //disagnostic
+    console.log("gallery elements found:",gallery);
+    console.log("Number of products to render:",productList.length);
     if (!gallery) return;
     gallery.innerHTML = "";
 
@@ -309,4 +312,5 @@ document.addEventListener("DOMContentLoaded", () => {
             validateEnquiryForm();
         });
     }
-});
+}
+)
